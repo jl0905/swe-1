@@ -8,8 +8,8 @@ windows: `g++ main.cpp $(pkg-config --cflags --libs Magick++) -lgdi32`
 
 linux/mac: `g++ main.cpp $(pkg-config --cflags --libs Magick++) `
 
-
-for convenience I also put a statically linked pre-compiled exe in the repo (portable.exe). You need 64 bit windows x86 cpu computer to use portable.exe
 When you run it just type in the name of the <app.package>-<screen#>
 
-note that input has to be in the subinputs folder, and the outputted annotated png will generate in outputs subfolder. Also note that the input needs to be a pair, only of 1 xml file and corresponding 1 png file.
+for convenience I also put a statically linked pre-compiled exe in the repo (portable.exe). You need 64 bit windows x86 cpu computer to use portable.exe
+
+note that input has to be in the inputs subfolder, and the outputted annotated png will generate in outputs subfolder. Also note that the input needs to be a pair, only of 1 xml file and corresponding 1 png file.
