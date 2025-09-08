@@ -13,3 +13,5 @@ When you run it just type in the name of the <app.package>-<screen#>
 for convenience I also put a statically linked pre-compiled exe in the repo (portable.exe). You need 64 bit windows x86 cpu computer to use portable.exe
 
 note that input has to be in the inputs subfolder, and the outputted annotated png will generate in outputs subfolder. Also note that the input needs to be a pair, only of 1 xml file and corresponding 1 png file.
+
+The algorithm just looks for tags enclosed by `<node` and `/>` to know if its a leaf node, then it takes the bounds field of that tag and uses it to draw a rectangle.
